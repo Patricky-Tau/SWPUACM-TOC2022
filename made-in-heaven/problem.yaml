@@ -1,0 +1,4 @@
+limits:
+  time: 1
+  memory: 256
+validator_flags: float_absolute_tolerance 1e-6

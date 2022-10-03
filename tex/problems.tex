@@ -1,0 +1,468 @@
+\documentclass[UTF8,13pt]{ctexart}
+\CTEXsetup[format={\Large\bfseries}]{section}
+
+\title{2022 SWPU ACM-Team Try-out Contest}
+\author{Patricky}
+\date{\today}
+
+\usepackage{makecell}
+\usepackage[head=5in, foot=1in, paper=a4paper, scale=0.8, tmargin=2cm, bmargin=1.5cm, lmargin=2cm, rmargin=2cm, headheight=7pt, footskip = 10mm]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{blindtext}
+\usepackage{epigraph} 
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\renewcommand{\footrulewidth}{1pt}
+
+\setlength{\parskip}{0.03in} 
+\linespread{1.1}
+\setlength{\arrayrulewidth}{0.5mm}
+%\setlength{\tabcolsep}{10pt}
+
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[scale=0.06]{./logo.pdf}}
+\fancyhead[C]{2022 SWPU ACM-Team Try-out Contest\\ China, Chengdu, Oct 15th, 2022}
+\fancyfoot[C]{Page \thepage{} of \pageref{LastPage}}
+
+\begin{document}
+
+\section*{Problem A. Sudoku}
+%\heiti 问题A
+
+Time limit:\tab[1cm]1 second
+	
+Memory limit:\tab[0.5cm]256 megabytes
+	
+input:\tab[0.7cm]\texttt{standard input}
+	
+output:\tab[0.47cm]\texttt{standard output}
+
+\begin{flushleft}
+				
+	Sudoku(数独)is a logic-based combinatorial number-placement puzzle, which appeals to Patricky.
+				
+\end{flushleft}
+\begin{flushleft}
+				
+	In classic Sudoku, the objective is to fill a $9 \times 9$ grid with digits so that each column, each row, and each of the nine $3 \times 3$ subgrids that compose the grid (also called ``boxes", ``blocks", or ``regions") contain all of the digits from $1$ to $9$. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a single solution.
+				
+\end{flushleft}
+\begin{flushleft}
+					
+	Patricky didn't mean to make you solve this problem for the given puzzle. He will show you some sudoku he completed recently. Your task is to determine whether Patricky won.
+						
+	\subsection*{\textsf{Input}}
+						
+	$9$ rows, each of them contains $9$ numbers between $1$ and $9$, seperated by spaces.
+						
+	\subsection*{\textsf{Output}}
+						
+	Print ``YES'' in one line if Patricky won, or ``NO'' to report he failed \textbf{(with no quotation marks)}.
+						
+	\subsection*{\textsf{Example}} %这里是样例
+				
+	\begin{tabular}{|p{8cm}|p{8cm}|}
+		\hline
+								
+		%使用makecell使得第一行特殊处理
+		\makecell[c]{\texttt{standard input}} & \makecell[c]{\texttt{standard output}} \\
+								
+		\hline
+		\begin{tabular}{ccccccccc}
+		5 & 3 & 4 & 6 & 7 & 8 & 9 & 1 & 2 \\
+		6 & 7 & 2 & 1 & 9 & 5 & 3 & 4 & 8 \\
+		1 & 9 & 8 & 3 & 4 & 2 & 5 & 6 & 7 \\
+		8 & 5 & 9 & 7 & 6 & 1 & 4 & 2 & 3 \\
+		4 & 2 & 6 & 8 & 5 & 3 & 7 & 9 & 1 \\
+		7 & 1 & 3 & 9 & 2 & 4 & 8 & 5 & 6 \\
+		9 & 6 & 1 & 5 & 3 & 7 & 2 & 8 & 4 \\
+		2 & 8 & 7 & 4 & 1 & 9 & 6 & 3 & 5 \\
+		3 & 4 & 5 & 2 & 8 & 6 & 1 & 7 & 9 \\
+	\end{tabular}&YES\\
+				
+	\hline
+				
+	\end{tabular}
+				
+\end{flushleft}
+
+\newpage
+
+\section*{Problem B. Where is the Maximum}
+%\heiti 问题A
+
+Time limit:\tab[1cm]1 second
+	
+Memory limit:\tab[0.5cm]256 megabytes
+	
+output:\tab[0.47cm]\texttt{standard output}
+
+\begin{flushleft}
+					
+	You will \textbf{NOT} be given an integer $n$ along with a sequence $a_1, a_2, \cdots, a_n$ and you don't need to find where the maximum is. All you need to do is to print the longest word in this paragraph. You may wonder why this problem so simple and become extremely frustrated. Well, there is no reason but love. Good luck to you!
+\end{flushleft}
+\begin{flushleft}
+	Another papagraph starts, but the problem doesn't change. Do you wonder why the statements are written in English instead of 中文? Is it just for international? -- The answer is 100\% \textbf{NO}. Actually it's beacuse that the standard ICPC problems are written in English. You just graduated from high school. I think this won't be hard for you. Oh, have you already found the answer? So easy, isn't it?
+							
+	\subsection*{\textsf{Example}}
+						
+	\begin{tabular}{|p{8cm}|p{8cm}|}
+		\hline
+		\makecell[c]{\texttt{standard input}} & \makecell[c]{\texttt{standard output}} \\
+										
+		\hline
+		no input                              & you need to find the answer            \\
+		\hline
+									
+	\end{tabular}
+					
+\end{flushleft}
+
+\newpage
+
+\section*{Problem C. Print World to Hello}
+%\heiti 问题A
+
+Time limit:\tab[1cm]1 second
+	
+Memory limit:\tab[0.5cm]256 megabytes
+	
+input:\tab[0.7cm]\texttt{standard input}
+	
+output:\tab[0.47cm]\texttt{standard output}
+
+\begin{flushleft}
+	{When someone say ``Hello'' to you, you should apply him with ``World''.}
+					
+	\subsection*{\textsf{Input}}
+								
+	You are given many words(no more than $54$ words and each of them is no more than $10$ letters) consisting of uppercase and lowercase letters separated by spaces and \textbf{EOL}(end of line)s, util \textbf{EOF}(End of File).
+								
+	\subsection*{\textsf{Output}}
+							
+	If there are any ``Hello''s(case sensitive) given, you should print ``World''.
+							
+	Otherwise you should print ``Hello''.
+						
+								
+	\subsection*{\textsf{Examples}}
+						
+	\begin{tabular}{|p{8cm}|p{8cm}|}
+		\hline
+												
+		\makecell[c]{\texttt{standard input}}                                                                       & \makecell[c]{\texttt{standard output}} \\
+												
+		\hline
+		Hello World the programmer typed                                                                            & World                                  \\
+		\hline
+		World                                                                                                       & Hello                                  \\
+		\hline
+		I have had my invitation to this worlds festival
+		and thus my life has been blessed Early in the day it was whispered that we should sail in a boat
+		only thou and I and never a soul in the world would know of this our pilgrimage to no country and to no end & Hello                                  \\
+		\hline
+										     
+	\end{tabular}
+					
+	\subsection*{\textsf{Note}}	
+					
+	\textbf{EOF}:
+						
+	\begin{lstlisting}
+// main.c
+while ( scanf(``???'') != EOF ) {
+  // do something
+}
+	\end{lstlisting}
+					
+					
+	\kaishu{我接过此间的请柬，得获世界之庇佑。	\\*
+		破晓轻吟密语，卿卿伴我泛舟游。
+	万籁俱寂，无人晓二人曼曼长途。}
+						
+\end{flushleft}
+
+\newpage
+\section*{Problem D. Unique Element}
+%\heiti 问题A
+
+Time limit:\tab[1cm]1 second
+	
+Memory limit:\tab[0.5cm]256 megabytes
+	
+input:\tab[0.7cm]\texttt{standard input}
+	
+output:\tab[0.47cm]\texttt{standard output}
+
+\begin{flushleft}
+					
+	You are given an \textbf{odd} integer $n$ along with a sequence $a_1, a_2, \cdots, a_n$. There is unique element occurs only once. Your task is to find it.
+							
+	\subsection*{\textsf{Input}}
+							
+	The first line contains one odd integer $n\;(1 \leq n < 10 ^ 5)$.
+					
+	The second line contains $n$ integers $a_1, a_2, \cdots, a_n\;(-1000 \le a_i \le 1000)$, indicating the given sequence.
+							
+	\subsection*{\textsf{Output}}
+							
+	Print the unique element.
+							
+	\subsection*{\textsf{Example}}
+						
+	\begin{tabular}{|p{8cm}|p{8cm}|}
+		\hline
+		\makecell[c]{\texttt{standard input}} & \makecell[c]{\texttt{standard output}} \\
+										
+		\hline
+		5                                     & 2                                      \\
+		1 1 1 2 1                             & {}                                     \\
+		\hline
+									
+	\end{tabular}
+					
+\end{flushleft}
+
+\newpage
+
+\section*{Problem E. Amazing Pairs}
+ 
+Time limit:\tab[1cm]1 second
+	
+Memory limit:\tab[0.5cm]256 megabytes
+	
+input:\tab[0.7cm]\texttt{standard input}
+	
+output:\tab[0.47cm]\texttt{standard output}
+
+\begin{flushleft}
+					
+	You are given two integers $n, k$, along with a sequence $a_1, a_2, \cdots, a_n$. 
+					
+\end{flushleft}
+	
+\begin{flushleft}
+				
+	A pair $\langle i, j\rangle \; (i < j)$ is considered as \textbf{Amazing Pairs} if $a_i \oplus a_j = k$. Your task is to calculate the number of \textbf{Amazing Pairs} in $\{a\}$. Formally, calculate $\displaystyle{\sum_{i = 1}^n \sum_{j > i}^n \left[a_i \oplus a_j = k\right]}$ where the sign $[a = b] = 1$ if $a = b$, otherwise it's $0$.
+					
+\end{flushleft}
+	
+\begin{flushleft}
+	Here the operator $\oplus$ means \textbf{Exclusive Or}(异或). It is a logical operation that is true \textbf{if and only if} its arguments differ (one is true, the other is false).
+					
+\end{flushleft}
+	
+\begin{flushleft}
+	It's a bitwise(按位的) operation. For example, here's the way to calculate $9 \oplus 13$: $1001_{(2)}$ $\oplus$ $1101_{(2)}$ $=$ $0100_{(2)}$ $=$ $4_{(10)}$. So the answer for $9 \oplus 13 = 4$.
+				
+\end{flushleft}
+	
+\begin{flushleft}
+	\subsection*{\textsf{Input}}
+						
+	The first line contains two integers $n, k\;(1 \le n, k \le 10 ^ 5)$.
+					
+	The second line contains $n$ integers $a_1, a_2, \cdots, a_n\;(1 \le a_i \le 10^5)$, indicating the given sequence.
+							
+	\subsection*{\textsf{Output}}
+						
+	Print an integer — the number of Amazing Pairs.
+				
+	Your answer maybe too large, you'd better use \verb|long long| data type to carry it.
+						
+	\subsection*{\textsf{Examples}}
+				
+	\begin{tabular}{|p{8cm}|p{8cm}|}
+		\hline
+								
+		\makecell[c]{\texttt{standard input}} & \makecell[c]{\texttt{standard output}} \\
+								
+		\hline
+		2 3                                   & 1                                      \\
+		1 2                                   & {}                                     \\
+		\hline
+		6 1                                   & 2                                      \\
+		5 1 2 3 4 1                           & {}                                     \\
+		\hline
+								
+	\end{tabular}
+				
+	\subsection*{\textsf{Note}}
+	In example $1$, there are only $2$ numbers meet $1 \oplus 2 = 3$. 
+		
+	In example $2$, the $2$ pairs are  $\langle i, j\rangle = \langle1, 5\rangle, \langle3, 4\rangle$.
+		
+	By the way, you can use the operator \verb|^| in C/C++:
+				
+	\begin{lstlisting}
+// main.c
+#include <stdio.h>
+int main() {
+    printf("%d\n", 9 ^ 13); // 4;
+
+    long long ans = 1000000000 ^ 9999999999LL;
+    printf("ans = %lld\n", ans);
+
+    return 0;
+}
+	\end{lstlisting}
+				
+\end{flushleft}
+
+\newpage
+
+\section*{Problem F. Constructive Problem}
+
+Time limit:\tab[1cm]1 second
+	
+Memory limit:\tab[0.5cm]256 megabytes
+	
+input:\tab[0.7cm]\texttt{standard input}
+	
+output:\tab[0.47cm]\texttt{standard output}
+
+\begin{flushleft}
+				
+	Patricky has been loving the \textbf{F5 coffees} lately, which are packaged like some keys, very endearing:
+			
+	\begin{flushleft}
+		\centering{\includegraphics[width=0.25\textwidth]{key.jpeg}}
+	\end{flushleft}
+		
+	Now Patricky has collected $n$ each of $n$ flavors of coffee, he wants to arrange them into a $n$ $\times$ $n$ matrix so that no two identical flavors are next to each other. To make this more interesting, initially a flavor has been placed in column $1$ of each row.
+					
+	\subsection*{\textsf{Input}}
+					
+	The first line contains an integer $n\;(1 \le n \le 10 ^ 3)$.
+				
+	The second line contains $n$ integers $f_1, f_2, \cdots, f_n\;(1 \le f_i \le n)$, indicating flavors put in the first column. No two coffees given with same flavor share an edge.
+		
+	\subsection*{\textsf{Output}}
+					
+	Output a matrix of $n \times n$, indicating the way you put coffees.
+					
+	\textbf{If there are multiple answers, you can print any of them.}
+					
+	\subsection*{\textsf{Example}}
+			
+	\begin{tabular}{|p{8cm}|p{8cm}|}
+		\hline
+						
+		\makecell[c]{\texttt{standard input}} & \makecell[c]{\texttt{standard output}} \\
+						
+		\hline
+		3                                     & 1 2 1                                  \\ 
+		1 2 3                                 & 2 3 2                                  \\
+		{}                                    & 3 1 3                                  \\
+		\hline
+						
+	\end{tabular}
+			
+\end{flushleft}
+
+\newpage
+
+\section*{Problem G. Made in Heaven}
+%\epigraph{The time for Heaven. It has finally arrived$\;\dots$}{\textit{Enrico Pucci}}
+ 
+\begin{wrapfigure}{r}{0.25\textwidth}
+	\centering
+	\includegraphics[width=0.25\textwidth]{made-in-heaven.jpg}
+	\newline\newline
+	\includegraphics[width=0.25\textwidth]{enrico-pucci.jpg}
+	\newline\newline
+	\includegraphics[width=0.25\textwidth]{made-in-heaven-stats.png}
+\end{wrapfigure}
+
+Time limit:\tab[1cm]1 second
+	
+Memory limit:\tab[0.5cm]256 megabytes
+	
+input:\tab[0.7cm]\texttt{standard input}
+	
+output:\tab[0.47cm]\texttt{standard output}
+
+\begin{flushleft}
+					
+	A \textbf{Stand} is a physical manifestation of a person's ``life energy''. It is a power unique to the \textit{JoJo's Bizarre Adventure} series. The Stand is created from someone's psyche, which includes not only humans but also other living creatures. That individual is referred to as the Stand User. The User then gives their Stand a name and uses it for various purposes.
+				
+\end{flushleft}
+	
+\begin{flushleft}
+				
+	\textbf{Made in Heaven} is a Stand belonging to Enrico Pucci. It was considered by \textit{DIO} to be the ultimate Stand and the key to achieving ``heaven''. Made in Heaven is an extremely powerful close-range time controlling Stand. Although its physical abilities may not be remarkable, its control over time grants it an overwhelming speed advantage.
+				
+\end{flushleft}
+	
+\begin{flushleft}
+					
+	It's just one of many Stands in \textit{JoJo's Bizarre Adventure}.
+	Each of them has a $6$-equal parted graph Stat(数据) to show its $6$ abilities: {Destructive Power}, {Speed}, {Range}, {Stamina}(持久), {Precision} and {Development Potential}.
+	Patricky thinks the area of Stand Stats is the power of Stand and he's going to calculate it.
+						
+	\subsection*{\textsf{Input}}
+						
+	The input contains $6$ letters consisting of only O, A, B, C, D, E, X,\\* representing the quality of Stand given by clockwise starting with {Destructive Power}. The letter `O' means number 0 and `X' is for $\infty$.\\* \textbf{The width between adjacent(相邻) two levels is 1 unit.}
+						
+	\subsection*{\textsf{Output}}
+						
+	Print a single real number — the area.
+				
+	Your answer will be considered correct if its absolute or relative error does not exceed $10^{-6}$. Formally, let your answer be $a$, the jury's answer be $b$. Your answer will be considered correct if $\displaystyle{\frac{|a-b|}{\max(1,|b|)} \le 10^{-6}}$.
+						
+	\subsection*{\textsf{Examples}}
+				
+	\begin{tabular}{|p{8cm}|p{8cm}|}
+		\hline
+								
+		\makecell[c]{\texttt{standard input}} & \makecell[c]{\texttt{standard output}} \\
+								
+		\hline
+		BXCACA                                & 48.06441                               \\
+		\hline
+		EEEEEE                                & 2.59808                                \\
+		\hline
+		AACABB                                & 48.06441                               \\
+		\hline
+		AACAAA                                & 56.29165                               \\
+		\hline
+								
+	\end{tabular}
+				
+	\subsection*{\textsf{Note}}
+				
+	The shape of \textbf{EEEEEE} is a regular hexagon, with area 
+	$\displaystyle{\frac{3\sqrt{3}}{2}} \doteq 2.598076211$.
+				
+	The Stand with Stats \textbf{AACABB} is \textit{DIO}'s \textit{The World}!
+				
+	The Stand with Stats \textbf{AACAAA} is \textit{Star Platinum}.
+				
+\end{flushleft}
+
+\end{document}

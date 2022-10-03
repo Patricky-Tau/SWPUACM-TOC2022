@@ -1,0 +1,4 @@
+limits:
+  time: 1
+  memory: 256
+validation: custom
