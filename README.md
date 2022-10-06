@@ -19,6 +19,8 @@ fun: 各题首字母连起来是 $\rm SWPUACM​$。
 
 $\rm frustrated$ 即为所求。
 
+note: 可使用正则表达式查找 `\w{10}`。
+
 ### C. Print World to Hello
 
 > 题意：直到 `EOF`，给定若干大小写字母组成的单词、空格以及换行。如果其中出现 $\rm Hello$, 回复 $\rm World$，否则回复 $\rm Hello$，大小写敏感。
